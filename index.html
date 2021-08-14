@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canva Clone</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/jdenticon@3.1.0/dist/jdenticon.min.js"
+      async
+      integrity="sha384-VngWWnG9GS4jDgsGEUNaoRQtfBGiIKZTiXwm9KpgAeaRn6Y/1tAFiyXqSzqC8Ga/"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header
+      class="
+        Sticky
+        z-50
+        px-2
+        flex
+        items-center
+        h-20
+        bg-white
+        shadow-sm
+        max-w-screen-2xl
+        m-auto
+      "
+    >
+      <div class="flex items-center">
+        <div class="hidden md:inline-flex logo h-14 w-24">
+          <img
+            class="w-full h-full object-contain"
+            src="./img/Canva-Logo.png"
+            alt=""
+          />
+        </div>
+        <div class="hidden lg:inline-flex items-center space-x-8">
+          <p class="text-gray-600 cursor-pointer bg-gray-100 p-3 rounded-lg">
+            Home
+          </p>
+          <p
+            class="
+              text-gray-600
+              cursor-pointer
+              hover:bg-gray-100
+              p-3
+              rounded-lg
+            "
+          >
+            Templates
+          </p>
+          <p
+            class="
+              text-gray-600
+              cursor-pointer
+              hover:bg-gray-100
+              p-3
+              rounded-lg
+            "
+          >
+            Feature
+          </p>
+          <p
+            class="
+              text-gray-600
+              cursor-pointer
+              hover:bg-gray-100
+              p-3
+              rounded-lg
+            "
+          >
+            Learn
+          </p>
+          <p
+            class="
+              text-gray-600
+              cursor-pointer
+              hover:bg-gray-100
+              p-3
+              rounded-lg
+            "
+          >
+            Pricing
+          </p>
+        </div>
+      </div>
+      <div
+        class="lg:ml-16 lg:mr-8 border p-3 flex items-center flex-1 rounded-lg"
+      >
+        <i class="text-gray-600 fas fa-search"></i>
+        <input
+          class="px-3 text-gray-600 font-semibold outline-none flex-grow"
+          type="text"
+          placeholder="Search Canva"
+        />
+      </div>
+      <div class="hidden md:inline-flex ml-2 flex items-center space-x-4">
+        <i class="text-gray-600 far fa-question-circle"></i>
+        <i class="text-gray-600 fas fa-cog"></i>
+        <p class="bg-purple-600 text-white px-5 py-2 rounded-lg cursor-pointer">
+          Create a Design
+        </p>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="flex">
+      <div class="categories-section px-5 flex flex-col p-6 space-y-2">
+        <div
+          class="
+            flex
+            items-center
+            space-x-2
+            cursor-pointer
+            bg-gray-100
+            px-3
+            py-2
+            text-gray-800
+            font-semibold
+          "
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+            />
+          </svg>
+          <p>Recommendation for you</p>
+        </div>
+        <div
+          class="
+            flex
+            items-center
+            space-x-2
+            text-gray-800
+            cursor-pointer
+            hover:bg-gray-100
+            px-3
+            py-2
+          "
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 3h6.25a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm.5 1.5v7h5.25v-7H4.5zm9.25 6.5H20a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-6.25a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1zm.5 1.5v7h5.25v-7h-5.25zM4 14.5h6.25a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4.5a1 1 0 0 1 1-1zm.5 1.5v3.5h5.25V16H4.5zm9.25-13H20a1 1 0 0 1 1 1v4.5a1 1 0 0 1-1 1h-6.25a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm.5 1.5V8h5.25V4.5h-5.25z"
+              fill="currentColor"
+            ></path>
+          </svg>
+          <p>All your designs</p>
+        </div>
+        <div
+          class="
+            flex
+            items-center
+            space-x-2
+            text-gray-800
+            cursor-pointer
+            hover:bg-gray-100
+            px-3
+            py-2
+          "
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            width="24"
+            height="25"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.75 12.75a.75.75 0 0 1 0 1.5H4V16a.75.75 0 0 1-1.5 0v-1.75H.75a.75.75 0 0 1 0-1.5H2.5V11A.75.75 0 0 1 4 11v1.75h1.75zm13.6 3.74a.6.6 0 0 0 .13.01h3.02a.8.8 0 0 0-.47-.74l-2.56-1.12a1.5 1.5 0 0 1-.9-1.38v-.51a1.5 1.5 0 0 1 .65-1.24c.96-.66 1.7-2.47 1.7-4.26 0-1.93-.8-2.75-2.44-2.75-.15 0-.3 0-.43.02a5.5 5.5 0 0 0-.7-1.4c.18-.03.8-.12 1.13-.12 2.4 0 3.95 1.41 3.95 4.25 0 1.7-.66 2.68-1.54 4.73l-.82.77v.51l2.56 1.13A2.31 2.31 0 0 1 24 16.5a1.5 1.5 0 0 1-1.5 1.5h-2.35a2.98 2.98 0 0 0-.8-1.5v-.01zm-4.82-1.27l2.73 1.2A2.92 2.92 0 0 1 19 19.1v.4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 19.5v-.4c0-1.16.69-2.2 1.75-2.66l2.75-1.18v-1.24C7.92 12.62 7 9.99 7 7.5 7 3.9 8.91 2 11.97 2 15.03 2 17 3.79 17 7.38c0 2.44-.92 5.1-2.47 6.54v1.3zm-1.5-1.3a1.5 1.5 0 0 1 .48-1.1c1.18-1.1 1.99-3.3 1.99-5.44 0-2.66-1.2-3.88-3.53-3.88-2.27 0-3.47 1.29-3.47 4 0 2.18.81 4.36 1.99 5.39a1.5 1.5 0 0 1 .51 1.13v1.24a1.5 1.5 0 0 1-.9 1.38l-2.76 1.18a1.39 1.39 0 0 0-.84 1.28v.4h11v-.4c0-.56-.33-1.07-.84-1.3l-2.74-1.21a1.5 1.5 0 0 1-.89-1.37v-1.3z"
+            ></path>
+          </svg>
+          <p>Shared with you</p>
+        </div>
+        <div
+          class="
+            flex
+            items-center
+            space-x-2
+            cursor-pointer
+            text-gray-800
+            hover:bg-gray-100
+            px-3
+            py-2
+          "
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M12.23 3.31a.5.5 0 0 0-.46 0l-8 4.2a.5.5 0 0 0-.27.45v8.08c0 .18.1.35.27.44l8 4.2a.5.5 0 0 0 .46 0l8-4.2a.5.5 0 0 0 .27-.44V7.96a.5.5 0 0 0-.27-.45l-8-4.2zm.7-1.32l8 4.2A2 2 0 0 1 22 7.96v8.08a2 2 0 0 1-1.07 1.77l-8 4.2a2 2 0 0 1-1.86 0l-8-4.2A2 2 0 0 1 2 16.04V7.96a2 2 0 0 1 1.07-1.77l8-4.2a2 2 0 0 1 1.86 0zm-5 13.16c1.45 0 2.5-.9 2.54-2.2H9.1c-.09.6-.55 1-1.16 1-.8 0-1.27-.67-1.27-1.77s.48-1.77 1.26-1.77c.62 0 1.08.41 1.16 1.02h1.38c-.05-1.27-1.12-2.22-2.54-2.22-1.69 0-2.72 1.13-2.72 2.97 0 1.84 1.03 2.97 2.72 2.97zm6.1-5.94c-1.7 0-2.79 1.14-2.79 2.97 0 1.84 1.08 2.97 2.78 2.97 1.7 0 2.77-1.13 2.77-2.97 0-1.83-1.07-2.97-2.77-2.97zm0 1.19c.78 0 1.3.7 1.3 1.78 0 1.09-.52 1.78-1.3 1.78-.8 0-1.33-.69-1.33-1.78s.53-1.78 1.32-1.78zM18 15a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+            ></path>
+          </svg>
+          <p>Brand Kit</p>
+        </div>
+        <div
+          class="
+            flex
+            items-center
+            space-x-2
+            text-gray-800
+            cursor-pointer
+            hover:bg-gray-100
+            px-3
+            py-2
+          "
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+            />
+          </svg>
+          <p>Content Planner</p>
+        </div>
+        <div
+          class="
+            flex
+            items-center
+            space-x-2
+            cursor-pointer
+            text-gray-800
+            hover:bg-gray-100
+            px-3
+            py-2
+          "
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+            />
+          </svg>
+          <p>Create a team</p>
+        </div>
+        <div
+          class="
+            flex
+            items-center
+            space-x-2
+            text-gray-800
+            cursor-pointer
+            hover:bg-gray-100
+            px-3
+            py-2
+          "
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z"
+            />
+          </svg>
+          <p>All your folder</p>
+        </div>
+        <div
+          class="
+            flex
+            items-center
+            space-x-2
+            text-gray-800
+            cursor-pointer
+            hover:bg-gray-100
+            px-3
+            py-2
+          "
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+            />
+          </svg>
+          <p>Trash</p>
+        </div>
+
+        <div
+          class="
+          my-5
+            flex
+            items-center
+            justify-center
+            space-x-2
+            cursor-pointer
+            bg-gray-100
+            py-3
+            rounded-lg
+          "
+        >
+        <i class="text-yellow-400 fas fa-crown"></i>
+          </svg>
+          <p class="text-gray-800 font-semibold">Try Canva Pro</p>
+        </div>
+      </div>
+      <div class="home-screen-section"></div>
+    </main>
+  </body>
+</html>
